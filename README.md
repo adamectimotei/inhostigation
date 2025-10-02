@@ -20,7 +20,7 @@ Burp extension for automated detection of **Host header injection** vulnerabilit
 - **Malformed request line:** to detect routing-based SSRF behavior  
 - **Body/header reflection:** to highlight cache-poisoning / link-poisoning potential
 - **SSRF confirmation via Collaborator:** auto-detects outbound DNS/HTTP interactions
-- **Full list of performed checks:** see the [CHECKS.md](CHECKS.md) file.
+- **Full list of performed checks:** see the [checks.md](checks.md) file.
 
 > 📝 **Note:** Connection-reuse host stickiness is **not** automated
 

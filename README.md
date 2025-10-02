@@ -15,7 +15,7 @@ Burp extension for automated detection of **Host header injection** vulnerabilit
 ## High-level checks
 - **Host value manipulation:** arbitrary host, `Host:port` (numeric & non-numeric), subdomain, pre/post concatenation  
 - **Precedence quirks:** **duplicate** `Host` headers, **indented/folded** `Host` (leading space)  
-- **Override/proxy headers:** `X-Forwarded-Host`, `Forwarded` (RFC 7239), `X-Original-Host`, `X-Forwarded-Server`, etc.  
+- **Override/proxy headers:** `X-Forwarded-Host`, `Forwarded` (RFC 7239), `X-Original-Host`, `X-Forwarded-Server`, etc. (full list in [proxy_headers.txt](proxy_headers.txt))  
 - **Absolute-URI request line:** `GET https://host/... HTTP/1.1` 
 - **Malformed request line:** to detect routing-based SSRF behavior  
 - **Body/header reflection:** to highlight cache-poisoning / link-poisoning potential
